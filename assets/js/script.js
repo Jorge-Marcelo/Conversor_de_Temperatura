@@ -44,7 +44,8 @@ return Math.floor(Math.random() * 256);
 }
 
 /*Função responsavel pela mudança de cor*/
-function mudarCor(){
+function mudarCor(event){
+event.preventDefault();
 /*Aqui  ele pega cada um dos valors do RGB e trasforma em uma cor
 aleatoria e essa cor vai para o body*/ 
 let corAleatoria = `rgb(${numeroAleatorio()}, ${numeroAleatorio()}
