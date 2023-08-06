@@ -1,0 +1,341 @@
+/*
+Autor: Jorge Marcelo
+Data de Criação: 08/08/2023
+Github: https://github.com/Jorge-Marcelo
+Linkedin: https://www.linkedin.com/in/jorge-marcelo-067a5017b/
+Instagram: https://www.instagram.com/10_stronger/
+Threads: https://www.threads.net/@10_stronger
+*/ 
+
+/*Google Fonts*/
+/*Roboto Mono*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Roboto+Mono:wght@300&display=swap');
+
+/*Roboto Sans Serif*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*Configuração padrão*/
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: "Roboto Mono", monospace;
+font-size: 18px;
+font-weight: 900;
+text-align: center;
+transition: all 0.5s ease;
+}
+
+body{
+background-color: rgb(0, 102, 255);
+}
+
+/*Formulario*/
+form{
+width: 300px;
+background-color: rgb(51, 51, 51);
+border-radius: 10px;
+box-shadow: 0 20px 25px rgba(0,0,0,0.25);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+position: absolute;
+transform: translate(-50%,-50%);
+left: 50%;
+top: 50%;
+padding: 10px;
+border: 3px solid white;
+}
+
+/*Textso*/
+h1{
+font-family: 'Roboto', sans-serif;
+margin: 10px;
+color: white;
+font-weight: 900
+}
+
+label{
+margin: 5px;
+color: white;
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+}
+
+/*input*/
+input{
+border-radius: 10px;
+background: transparent;
+outline: none;
+border: 3px solid rgb(255, 255, 255);
+margin: 5px;
+width: 100%;
+height: 35px;
+color: white;
+}
+
+input:focus{
+border-color: rgb(0, 0, 0);
+}
+
+/*Botão de mudança de cor*/
+.changeColor{
+border: 3px solid rgb(255, 255, 255);
+border-radius: 30px;
+letter-spacing: -1px;
+width: 200px;
+margin: 5px;
+background: transparent;
+color: white;
+}
+
+.changeColor:hover{
+background-color: white;
+border-color: black;
+cursor: pointer;
+color: black;
+}
+
+/*Rodape e redes sociais*/
+table{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+tr{
+display: flex;
+flex-direction: column;
+}
+
+button{
+margin:  5px 5px;
+border-radius: 30px;
+cursor: pointer;
+width: 250px;
+height: 45px;
+font-family: 'Roboto', sans-serif;
+font-weight: 900;
+font-size: 1.2em;
+}
+
+.igm-github{
+position: relative;
+right: 20px;
+}
+
+.igm-linkedin{
+position: relative;
+right: 10px;
+}
+
+.igm-threads{
+position: relative;
+right: 10px;
+}
+
+/*Texto do botão*/
+span{
+position: relative;
+top: -8px;
+color: white;
+font-family: 'Roboto', sans-serif;
+font-weight: 900;
+font-size: 1.3em;
+}
+
+.github{
+background: transparent;
+border: 2px solid rgb(255, 255, 255);
+}
+
+.github:hover{
+background: rgb(0, 0, 0);
+}
+
+.linkedin{
+background: transparent;
+border: 2px solid rgb(255, 255, 255);
+}
+
+.linkedin:hover{
+background-color: rgb(47, 0, 255);
+}
+
+.instagram{
+background: transparent;
+border: 2px solid rgb(255, 255, 255);
+}
+
+.instagram:hover{
+background-color: rgb(255, 0, 128);
+}
+
+/*Animação de borda colorida*/
+section{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: rgb(51, 51, 51);
+width: 150px;
+height: 150px;
+border-radius: 50%;
+margin: 20px;
+}
+
+section::after{
+content: "";
+position: absolute;
+border-radius: 50%;
+
+width: 170px;
+height: 170px;
+z-index: -1;
+background: linear-gradient(35deg, rgb(255, 0, 0),rgb(255, 136, 0),
+ rgb(0, 255, 13), rgb(25, 0, 255), red);
+filter: blur(3px);
+animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+100%{
+transform: rotate(360deg);
+}
+}
+
+
+/*Animação 1 */
+.esmeralda-1{
+position: absolute;
+top: 78%;
+left: 42%;
+width: calc(188px/4);
+height: 32px;
+animation: animation 1s steps(4) infinite;
+cursor: pointer;
+background: url("../anim/esmeraldas-1.png");
+}
+
+@keyframes animation {
+from {
+background-position: 0;
+}
+to {
+background-position: 188px;
+}
+}
+
+
+/*Animação 2 */
+.esmeralda-2{
+position: absolute;
+top: 82%;
+left: 28%;
+width: calc(188px/4);
+height: 32px;
+animation: animation 1s steps(4) infinite;
+cursor: pointer;
+background: url("../anim/esmeraldas-2.png");
+}
+
+@keyframes animation {
+from {
+background-position: 0;
+}
+to {
+background-position: 188px;
+}
+}
+
+
+/*Animação 3 */
+.esmeralda-3{
+position: absolute;
+top: 87%;
+left: 27%;
+width: calc(188px/4);
+height: 32px;
+animation: animation 1s steps(4) infinite;
+cursor: pointer;
+background: url("../anim/esmeraldas-3.png");
+}
+
+@keyframes animation {
+from {
+background-position: 0;
+}
+to {
+background-position: 188px;
+}
+}
+
+
+/*Animação 4 */
+.esmeralda-4{
+position: absolute;
+top: 90%;
+left: 42%;
+width: calc(188px/4);
+height: 32px;
+animation: animation 1s steps(4) infinite;
+cursor: pointer;
+background: url("../anim/esmeraldas-4.png");
+}
+
+@keyframes animation {
+from {
+background-position: 0;
+}
+to {
+background-position: 188px;
+}
+}
+
+
+/*Animação 5 */
+.esmeralda-5{
+position: absolute;
+top: 87%;
+left: 57%;
+width: calc(188px/4);
+height: 32px;
+animation: animation 1s steps(4) infinite;
+cursor: pointer;
+background: url("../anim/esmeraldas-5.png");
+}
+
+@keyframes animation {
+from {
+background-position: 0;
+}
+to {
+background-position: 188px;
+}
+}
+
+/*Animação 6 */
+.esmeralda-6{
+position: absolute;
+top: 82%;
+left: 57%;
+width: calc(188px/4);
+height: 32px;
+animation: animation 1s steps(4) infinite;
+cursor: pointer;
+background: url("../anim/esmeraldas-6.png");
+}
+
+
+/*Animação 7 */
+.esmeralda-7{
+position: absolute;
+top: 84%;
+left: 42%;
+width: calc(188px/4);
+height: 32px;
+animation: animation 1s steps(4) infinite;
+cursor: pointer;
+background: url("../anim/esmeraldas-7.png");
+}
